@@ -1,4 +1,5 @@
 import { CardWrapperComponent } from '../card-wrapper/card-wrapper.component';
+import { Portfolio } from '../portfolio.constant';
 import { PortfolioService } from './../portfolio.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -13,12 +14,14 @@ export class HomeSkillsComponent implements OnInit {
   languages!: { image: string; text: string; }[];
   frameworks!: { image: string; text: string; }[];
   tools!: { image: string; text: string; }[];
+  currentUserObj!: Portfolio;
   constructor(private portService: PortfolioService) { }
 
   ngOnInit(): void {
-    this.languages = this.portService.languages;
-    this.frameworks = this.portService.frameworks;
-    this.tools = this.portService.tools;
+    this.currentUserObj = this.portService.getCurrentUserObj();
+    this.languages = this.currentUserObj.home.languages;
+    this.frameworks = this.currentUserObj.home.frameworks;
+    this.tools = this.currentUserObj.home.tools;
   }
 
 }

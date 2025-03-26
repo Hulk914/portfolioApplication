@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactCardLayoutComponent } from '../contact-card-layout/contact-card-layout.component';
+import { PortfolioService } from '../portfolio.service';
+import { Contact } from '../portfolio.constant';
 
 @Component({
   selector: 'app-contact',
@@ -9,10 +11,12 @@ import { ContactCardLayoutComponent } from '../contact-card-layout/contact-card-
   standalone: true
 })
 export class ContactComponent implements OnInit {
+  contactDetails!: Contact;
 
-  constructor() { }
+  constructor(private _portService: PortfolioService) { }
 
   ngOnInit(): void {
+    this.contactDetails = this._portService.getCurrentUserObj().contact;
   }
 
 }

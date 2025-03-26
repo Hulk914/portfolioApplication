@@ -6,11 +6,11 @@
             <div class="d-flex flex-column">
                 <div class="d-flex justify-content-start align-items-center p-3">
                     <img src="assets/call.png" class="contact_img" alt="not found">
-                    <h6 class="contactHead pl-2">(+91) 9650218723</h6>
+                    <h6 class="contactHead pl-2">{{contactDetails.phone}}</h6>
                 </div>
                 <div class="d-flex justify-content-between align-items-center p-3">
                     <img src="assets/mail.png" class="email_img p-0" alt="not found">
-                    <h6 class="emailHead">{{'ayushthakur2009@gmail.com'}}</h6>
+                    <h6 class="emailHead">{{contactDetails.email}}</h6>
                 </div>
             </div>
         </div>
@@ -20,13 +20,9 @@
             <h5 class="card-title text-center">Checkout !!!</h5>
             <div>
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/ayush-thakur/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://blitz-builder.herokuapp.com/" target="_blank">Resume Builder App</a></li>
-                    <li><a href="https://youtube.com/playlist?list=PLZdPgkRI3ruhsIqV7Cr5hxjAyNirV9Jr0"
-                            target="_blank">My Angular Tutorials</a></li>
-                    <li><a href="https://www.facebook.com/BedrockBottom" target="_blank">Rock Band Page</a></li>
-                    <li><a href="https://www.youtube.com/channel/UCtLFsrqdW5OHOpGxoO80_Gg" target="_blank">My Youtube
-                            Channel</a></li>
+                    @for(link of contactDetails.checkout; track link) {
+                    <li><a [href]="link.link" target="_blank">{{link.label}}</a></li>
+                    }
                 </ul>
             </div>
         </div>

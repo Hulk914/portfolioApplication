@@ -2,18 +2,15 @@
     <div class="d-flex align-items-center form-group mb-2">
         <label for="company" class="m-2 selectHead">Company</label>
         <select class="form-control selectStyle" id="company" (change)="showSelectedCompany($event)">
-            <option value="0">FIS / Zenmonics (Senior Software Engineer)</option>
-            <option value="1">Zycus (Associate Tech Lead)</option>
-            <option value="2">Infosys (Systems Engineer)</option>
-            <option value="3">Infosys (Systems Engineer)</option>
-            <option value="4">Infosys (Intern)</option>
-            <option value="5">Tata Technologies Limited (Intern)</option>
+            @for(option of experienceArr; track option; let i = $index) {
+            <option [value]="i">{{option.companyName}}</option>
+            }
         </select>
     </div>
 
     <div class="detailsWrapper">
-        <app-card-wrapper class="mb-3" title="Tech Stack" [iconArray]="iconArray" [isExperience]="true">
+        <app-card-wrapper class="mb-3" title="Tech Stack" [iconArray]="selectedCompany.iconArray" [isExperience]="true">
         </app-card-wrapper>
-        <app-about-product class="about ml-5" [detailArray]="detailsInfo"></app-about-product>
+        <app-about-product class="about ml-5" [detailArray]="selectedCompany.aboutProd"></app-about-product>
     </div>
 </div>

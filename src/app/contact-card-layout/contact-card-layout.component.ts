@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfolioService } from '../portfolio.service';
+import { Contact, Portfolio } from '../portfolio.constant';
 
 @Component({
   selector: 'app-contact-card-layout',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-card-layout.component.scss']
 })
 export class ContactCardLayoutComponent implements OnInit {
+  contactDetails!: Contact;
 
-  constructor() { }
+  constructor(private _portService: PortfolioService) { }
 
   ngOnInit(): void {
+    this.contactDetails = this._portService.getCurrentUserObj().contact;
   }
 
 }

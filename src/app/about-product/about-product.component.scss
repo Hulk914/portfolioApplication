@@ -7,7 +7,7 @@
 
 .detailContainer {
   height: 319px !important;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 @media screen and (max-width: 800px) {
