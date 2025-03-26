@@ -1,1 +1,37 @@
+@use './scss/variables.scss' as variables;
+
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #f8f8ff;
+}
+
+@media screen and (max-width: 774px) {
+    body {
+        width: fit-content;
+    }
+}
+
+.border-radius-0 {
+    border-radius: 0 !important;
+}
+
+::-webkit-scrollbar {
+    width: 0.15em;
+    height: 0.15em;
+}
+
+::-webkit-scrollbar-button {
+    background: variables.$primary-background-color;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: variables.$primary-heading-text-color;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f8f8ff;
+}
+
+.header-margin {
+    margin-top: 63px;
+}

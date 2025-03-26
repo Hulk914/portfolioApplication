@@ -1,0 +1,52 @@
+@use '../../scss/variables.scss' as variables;
+
+.card {
+    min-height: 500px;
+    // margin-top: 2%;
+}
+
+.hobbies-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+img {
+    height: 289px;
+}
+
+h5 {
+    border: 1px solid black;
+    padding: 2%;
+    text-transform: uppercase;
+}
+
+  @media screen and (max-width: 414px) {
+    .hobbies-wrapper {
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-between;
+       margin-top: 3%;
+       width: 100vw;
+    }
+
+    .card {
+        margin-bottom: 5%;
+    }
+  }
+
+  li {
+      a {
+        color: black;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+  }
+
+  
+  @media screen and (max-width: 1024px) and (min-width: 415px) {
+    .card {
+        margin-top: 5%;
+    }
+  }

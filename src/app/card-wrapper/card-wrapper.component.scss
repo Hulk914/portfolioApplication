@@ -1,0 +1,61 @@
+@use '../../scss/variables.scss' as variables;
+
+.image-holder {
+    img {
+        height: 40px;
+        padding-right: 2%;
+    }
+    height: 200px;
+    overflow-y: auto;
+}
+
+.border-radius-0 {
+    border-radius: 0 !important;
+}
+
+::-webkit-scrollbar {
+    width: 0.15em;
+    height: 0.15em;
+}
+::-webkit-scrollbar-button {
+    background: variables.$primary-background-color;
+}
+::-webkit-scrollbar-track-piece {
+    background: variables.$primary-heading-text-color;
+}
+::-webkit-scrollbar-thumb {
+    background: #f8f8ff;
+}
+
+.card-body-height {
+    height: 200px;;
+}
+
+.card-body-height-large {
+    height: 255px;
+}
+
+.card-body {
+    min-height: variables.$card-min-height;
+}
+
+.card {
+    width: variables.$card-width;
+    border-radius: 10%;
+    border: variables.$border;
+}
+
+.linkTxt {
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+}
+
+.imgText {
+    font-size: small;
+    text-align: center;
+}
+
+.imgdiv {
+    flex: 1 1 20%;
+}

@@ -1,0 +1,15 @@
+<div class="card" [ngClass]=" {'border-radius-0': isExperience}">
+    <div class="card-body">
+        <h5 class="card-title text-center">{{title}}</h5>
+        <div class="image-holder d-flex justify-content-left flex-wrap"
+            [ngClass]="{'card-body-height': !isExperience, 'card-body-height-large':isExperience}">
+            @for(imgObj of iconArray; track imgObj) {
+            <div class="m-2 d-flex flex-column align-items-center imgdiv">
+                <img [src]="imgObj?.image" alt="not found">
+                <p class="imgText">{{imgObj?.text}}</p>
+            </div>
+            }
+        </div>
+    </div>
+    <p *ngIf="linkText" class="linkTxt" (click)="navigateToLink()">{{linkText}}</p>
+</div>

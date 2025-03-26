@@ -1,0 +1,65 @@
+@use '../../scss/variables.scss' as variables;
+
+h5 {
+  font-family: "Fredoka One", cursive;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #557a95;
+  border: 1px solid black;
+  background-color: #e8ddd5;
+}
+
+.contact_img {
+  height: 33px;
+}
+
+.email_img {
+  height: 25px;
+}
+
+.contactHead {
+  // padding: 2%;
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+}
+
+.emailHead {
+  text-align: center;
+  margin: 0;
+  font-size: 15px;
+  padding-left: 4%;
+}
+
+.card-body {
+  min-height: variables.$card-min-height;
+}
+
+.card {
+  min-width: variables.$card-width;
+  border-radius: 10%;
+  border: variables.$border;
+  // background-color: #5d5c61;
+}
+
+li {
+  a {
+    text-decoration: underline;
+    color: black;
+  }
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+  }
+}

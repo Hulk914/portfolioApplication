@@ -1,0 +1,17 @@
+@use '../../scss/variables.scss' as variables;
+
+.card {
+  border-radius: 2%;
+  border: 2px solid variables.$primary-background-color;
+}
+
+.detailContainer {
+  height: 319px !important;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: 100vw;
+  }
+}

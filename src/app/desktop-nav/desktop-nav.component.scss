@@ -1,0 +1,108 @@
+@use '../../scss/variables.scss' as variables;
+
+nav {
+  font-weight: bolder;
+  padding-top: 2%;
+  background-color: variables.$primary-background-color;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999999999;
+  .desktop-ul {
+    margin: 0;
+    padding: 0.5%;
+    list-style: none;
+    width: 70%;
+  }
+
+  li {
+    border-right-color: #9494a0;
+    padding-right: 2%;
+    border-right: 1px solid black;
+    height: fit-content;
+    padding-left: 2%;
+    cursor: pointer;
+  }
+
+  li:last-child {
+    border: 0;
+  }
+
+  li:hover {
+    color: variables.$primary-heading-text-color;
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+h2 {
+  font-family: "Fredoka One", cursive;
+  background-color: variables.$primary-heading-text-color;
+  background-clip: text;
+  color: transparent;
+  width: fit-content;
+  padding: 3%;
+}
+
+.brandText {
+  width: 30%;
+  img {
+    display: none;
+  }
+}
+
+.highlight {
+  color: variables.$primary-heading-text-color;
+}
+
+.mobile-ul {
+  display: none;
+}
+
+.navContainer {
+  height: 55px;
+}
+
+@media screen and (max-width: 774px) {
+  .desktop-ul {
+    display: none !important;
+  }
+
+  .mobile-ul {
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    li {
+      padding: 0.5rem;
+      border-right: 0;
+    }
+  }
+
+  .nav-holder {
+    border-bottom: 1px solid black;
+  }
+
+  .navContainer {
+    height: 55px;
+  }
+
+  .brandText {
+    width: 70%;
+    display: flex;
+    justify-content: left;
+
+    img {
+      display: block;
+      width: 20%;
+      cursor: pointer;
+    }
+  }
+}

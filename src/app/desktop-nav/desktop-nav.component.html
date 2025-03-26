@@ -1,0 +1,63 @@
+<nav class="p-1">
+  <div
+    class="container d-flex justify-content-between navContainer"
+    [ngClass]="{ 'nav-holder': showMobNav }"
+  >
+    <div class="brandText">
+      <img
+        src="assets/ham.svg"
+        alt="hamburger"
+        (click)="showMobNav = !showMobNav"
+      />
+      <h2>Portfolio App</h2>
+    </div>
+    <ul class="d-flex justify-content-end pt-3 desktop-ul">
+      <li [routerLink]="['/home']" routerLinkActive="highlight">HOME</li>
+      <li [routerLink]="['/experience']" routerLinkActive="highlight">
+        EXPERIENCE
+      </li>
+      <li [routerLink]="['/contact']" routerLinkActive="highlight">CONTACT</li>
+      <li [routerLink]="['/hobbies']" routerLinkActive="highlight">HOBBIES</li>
+      <li [routerLink]="['/about']" routerLinkActive="highlight">ABOUT APP</li>
+    </ul>
+  </div>
+  <div *ngIf="showMobNav" class="container">
+    <ul class="mobile-ul">
+      <li
+        [routerLink]="['/home']"
+        routerLinkActive="highlight"
+        (click)="showMobNav = false"
+      >
+        HOME
+      </li>
+      <li
+        [routerLink]="['/experience']"
+        routerLinkActive="highlight"
+        (click)="showMobNav = false"
+      >
+        EXPERIENCE
+      </li>
+      <li
+        [routerLink]="['/contact']"
+        routerLinkActive="highlight"
+        (click)="showMobNav = false"
+      >
+        CONTACT
+      </li>
+      <li
+        [routerLink]="['/hobbies']"
+        routerLinkActive="highlight"
+        (click)="showMobNav = false"
+      >
+        HOBBIES
+      </li>
+      <li
+        [routerLink]="['/about']"
+        routerLinkActive="highlight"
+        (click)="showMobNav = false"
+      >
+        ABOUT APP
+      </li>
+    </ul>
+  </div>
+</nav>
