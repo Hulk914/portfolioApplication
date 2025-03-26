@@ -13,7 +13,7 @@ export class PortfolioService {
       home: {
         name: 'Ayush Thakur',
         experience: '8+',
-        resumePath: '/assets/Angular_Ayush_8yrs_resume.pdf',
+        resumePath: '/assets/Ayush_Angular_8yrs.pdf',
         designation: 'Senior Manager'
       }
     }

@@ -9,24 +9,6 @@
     overflow-y: auto;
 }
 
-.border-radius-0 {
-    border-radius: 0 !important;
-}
-
-::-webkit-scrollbar {
-    width: 0.15em;
-    height: 0.15em;
-}
-::-webkit-scrollbar-button {
-    background: variables.$primary-background-color;
-}
-::-webkit-scrollbar-track-piece {
-    background: variables.$primary-heading-text-color;
-}
-::-webkit-scrollbar-thumb {
-    background: #f8f8ff;
-}
-
 .card-body-height {
     height: 200px;;
 }
