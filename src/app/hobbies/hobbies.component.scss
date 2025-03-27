@@ -2,14 +2,15 @@
 
 .card {
     min-height: 500px;
-    // margin-top: 2%;
 }
 
 .hobbies-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
     flex-wrap: wrap;
     margin-top: 70px;
+    padding: 10px;
 }
 
 img {
@@ -26,7 +27,7 @@ h5 {
     .hobbies-wrapper {
        flex-direction: column;
        align-items: center;
-       justify-content: space-between;
+       justify-content: center;
        margin-top: 3%;
        width: 100vw;
     }

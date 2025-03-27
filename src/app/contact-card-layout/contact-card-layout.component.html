@@ -1,11 +1,12 @@
 <div class="card">
     <div class="card-body">
-        <h5 class="card-title text-center">{{contactDetails.experience}} Yrs</h5>
-        <h6 class="card-subtitle mb-2 text-center">of working experience</h6>
+        <h5 class="card-title text-center">{{contactDetails.experience}} Yrs Exp</h5>
         <div class="d-flex justify-content-left flex-wrap">
-            @for(iconSrc of contactDetails.companyIconList; track iconSrc) {
-            <img [src]="iconSrc" alt="not found">
-            }
+            <ul>
+                @for(company of contactDetails.companyList; track company) {
+                <li>{{company}}</li>
+                }
+            </ul>
         </div>
     </div>
 </div>

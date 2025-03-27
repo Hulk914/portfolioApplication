@@ -4,26 +4,9 @@
       <h5 class="card-title text-center underline">APPLICATION INFO</h5>
       <div>
         <ul>
-          <li>Angular version - 9</li>
-          <li>Deployed as a docker image in heroku</li>
-          <li>Multi stage docker file used to create the docker image</li>
-          <li>Github Repo - https://github.com/Hulk914/portfolioApp</li>
-          <li>Responsive Web app - Tablet and mobile compatible</li>
-          <li>For Best Experience - use Google Chrome</li>
-          <li>
-            Coding done using DRY principle with common components and services
-          </li>
-          <li>SCSS variables used to maintain consistent color scheme</li>
-          <li>
-            Compression middleware added to reduce bundle size and improve
-            initial load time
-          </li>
-          <li>Other optimizations - AOT, Angular Build Optimizer</li>
-          <li>Continuous Deployment using github actions</li>
-          <li>
-            Angular Universal used for SSR (Pre-rendering) first page to improve
-            load time
-          </li>
+          @for(aboutData of aboutArr; track aboutData) {
+          <li>{{aboutData}}</li>
+          }
         </ul>
       </div>
     </div>

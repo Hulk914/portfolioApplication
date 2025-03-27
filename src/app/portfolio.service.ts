@@ -6,7 +6,7 @@ import { portfolioData, PortfolioData } from './portfolio.constant';
 })
 export class PortfolioService {
 
-  currentUser = 'ayush';
+  currentUser = 'shreya';
 
   dynamicContent: PortfolioData = portfolioData;
 

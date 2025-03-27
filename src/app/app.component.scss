@@ -3,205 +3,238 @@
     width: 100vw;
     height: 100vh;
     z-index: -1;
+
     img {
-      position: fixed;
-      opacity: 0.7;
+        position: fixed;
+        opacity: 0.7;
     }
+
     #cog1 {
-      width: 1rem;
-      top: 59vh;
-      left: 23vw;
-      animation-name: rotate1;
-      animation-duration: 30s;
-      animation-iteration-count: infinite;
+        width: 1rem;
+        top: 59vh;
+        left: 23vw;
+        animation-name: rotate1;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
     }
+
     #cog2 {
-      width: 3rem;
-      top: 75vh;
-      left: 41vw;
-      animation-name: rotate2;
-      animation-duration: 30s;
-      animation-iteration-count: infinite;
+        width: 3rem;
+        top: 75vh;
+        left: 41vw;
+        animation-name: rotate2;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
     }
+
     #cog3 {
-      width: 2rem;
-      top: 70vh;
-      left: 2vw;
-      animation-name: rotate3;
-      animation-duration: 30s;
-      animation-iteration-count: infinite;
+        width: 2rem;
+        top: 70vh;
+        left: 2vw;
+        animation-name: rotate3;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
     }
+
     #cog4 {
-      width: 3rem;
-      top: 40vh;
-      left: 10vw;
-      animation-name: rotate2;
-      animation-duration: 20s;
-      animation-iteration-count: infinite;
+        width: 3rem;
+        top: 40vh;
+        left: 10vw;
+        animation-name: rotate2;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
     }
+
     #cog5 {
-      width: 2rem;
-      top: 50vh;
-      left: 80vw;
-      animation-name: rotate3;
-      animation-duration: 14s;
-      animation-iteration-count: infinite;
+        width: 2rem;
+        top: 50vh;
+        left: 80vw;
+        animation-name: rotate3;
+        animation-duration: 14s;
+        animation-iteration-count: infinite;
     }
+
     #cog6 {
-      width: 1rem;
-      top: 30vh;
-      left: 70vw;
-      animation-name: rotate1;
-      animation-duration: 20s;
-      animation-iteration-count: infinite;
+        width: 1rem;
+        top: 30vh;
+        left: 70vw;
+        animation-name: rotate1;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
     }
+
     #cog7 {
-      width: 2rem;
-      top: 130vh;
-      left: 20vw;
-      animation-name: rotate2;
-      animation-duration: 20s;
-      animation-iteration-count: infinite;
+        width: 2rem;
+        top: 130vh;
+        left: 20vw;
+        animation-name: rotate2;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
     }
+
     #cog8 {
-      width: 2rem;
-      top: 2000vh;
-      left: 170vw;
-      animation-name: rotate3;
-      animation-duration: 20s;
-      animation-iteration-count: infinite;
+        width: 2rem;
+        top: 2000vh;
+        left: 170vw;
+        animation-name: rotate3;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
     }
+
     #cog9 {
-      width: 2rem;
-      top: 35vh;
-      right: 2vw;
-      animation-name: rotate3;
-      animation-duration: 24s;
-      animation-iteration-count: infinite;
+        width: 2rem;
+        top: 35vh;
+        right: 2vw;
+        animation-name: rotate3;
+        animation-duration: 24s;
+        animation-iteration-count: infinite;
     }
+
     #cog10 {
-      width: 4rem;
-      top: 125vh;
-      right: 5vw;
-      animation-name: rotate1;
-      animation-duration: 24s;
-      animation-iteration-count: infinite;
+        width: 4rem;
+        top: 125vh;
+        right: 5vw;
+        animation-name: rotate1;
+        animation-duration: 24s;
+        animation-iteration-count: infinite;
     }
+
     #cog11 {
-      width: 2rem;
-      top: 75vh;
-      right: 13vw;
-      animation-name: rotate2;
-      animation-duration: 30s;
-      animation-iteration-count: infinite;
+        width: 2rem;
+        top: 75vh;
+        right: 13vw;
+        animation-name: rotate2;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
     }
+
     #cog12 {
-      width: 1rem;
-      top: 95vh;
-      right: 2vw;
-      animation-name: rotate3;
-      animation-duration: 22s;
-      animation-iteration-count: infinite;
+        width: 1rem;
+        top: 95vh;
+        right: 2vw;
+        animation-name: rotate3;
+        animation-duration: 22s;
+        animation-iteration-count: infinite;
     }
+
     #cog13 {
-      width: 1rem;
-      top: 100vh;
-      left: 2vw;
-      animation-name: rotate3;
-      animation-duration: 30s;
-      animation-iteration-count: infinite;
+        width: 1rem;
+        top: 100vh;
+        left: 2vw;
+        animation-name: rotate3;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
     }
+
     #cog14 {
-      width: 5rem;
-      top: 65vh;
-      left: 33vw;
-      animation-name: rotate2;
-      animation-duration: 16s;
-      animation-iteration-count: infinite;
+        width: 5rem;
+        top: 65vh;
+        left: 33vw;
+        animation-name: rotate2;
+        animation-duration: 16s;
+        animation-iteration-count: infinite;
     }
+
     #cog15 {
-      width: 4rem;
-      top: 70vh;
-      left: 65vw;
-      animation-name: rotate1;
-      animation-duration: 14s;
-      animation-iteration-count: infinite;
+        width: 4rem;
+        top: 70vh;
+        left: 65vw;
+        animation-name: rotate1;
+        animation-duration: 14s;
+        animation-iteration-count: infinite;
     }
+
     #cog16 {
-      width: 1rem;
-      top: 90vh;
-      left: 50vw;
-      animation-name: rotate3;
-      animation-duration: 22s;
-      animation-iteration-count: infinite;
+        width: 1rem;
+        top: 90vh;
+        left: 50vw;
+        animation-name: rotate3;
+        animation-duration: 22s;
+        animation-iteration-count: infinite;
     }
-  }
-  
-  .fadeIn {
+}
+
+.home-container {
+    width: 100vw;
+}
+
+.fadeIn {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
-  }
-  
-  @keyframes fadeInAnimation {
+}
+
+@keyframes fadeInAnimation {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  @keyframes rotate1 {
+}
+
+@keyframes rotate1 {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     25% {
-      transform: rotate(180deg);
+        transform: rotate(180deg);
     }
+
     50% {
-      transform: rotate(-180deg);
+        transform: rotate(-180deg);
     }
+
     75% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
-  @keyframes rotate2 {
+}
+
+@keyframes rotate2 {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     25% {
-      transform: rotate(-180deg);
+        transform: rotate(-180deg);
     }
+
     50% {
-      transform: rotate(180deg);
+        transform: rotate(180deg);
     }
+
     75% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
+
     100% {
-      transform: rotate(180deg);
+        transform: rotate(180deg);
     }
-  }
-  
-  @keyframes rotate3 {
+}
+
+@keyframes rotate3 {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     25% {
-      transform: rotate(-180deg);
+        transform: rotate(-180deg);
     }
+
     50% {
-      transform: rotate(90deg);
+        transform: rotate(90deg);
     }
+
     75% {
-      transform: rotate(120deg);
+        transform: rotate(120deg);
     }
+
     100% {
-      transform: rotate(-360deg);
+        transform: rotate(-360deg);
     }
-  }
-  
+}

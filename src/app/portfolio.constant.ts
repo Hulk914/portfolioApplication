@@ -34,16 +34,33 @@ export interface CheckoutLink {
 
 export interface Contact {
     experience: string;
-    companyIconList: string[];
+    companyList: string[];
     phone: string;
     email: string;
     checkout: CheckoutLink[];
+}
+
+interface HobbyLink {
+    title: string;
+    link: string;
+}
+
+export interface Hobby {
+    imageSrc: string;
+    title: string;
+    hobbyLinks: HobbyLink[];
+}
+
+export interface Hobbies {
+    hobbiesArray: Hobby[];
 }
 
 export interface Portfolio {
     home: Home;
     experience: Experience;
     contact: Contact;
+    hobbies: Hobbies;
+    about: string[];
 }
 
 export interface PortfolioData {
@@ -70,7 +87,7 @@ export const portfolioData: PortfolioData = {
                 { image: 'assets/bootstrap.png', text: 'bootstrap' },
                 { image: 'assets/react.png', text: 'react' },
                 { image: 'assets/express.png', text: 'expressJS' },
-                { image: 'assets/primeng.png', text: 'primeNG' },
+                { image: 'assets/ngrx.png', text: 'NgRx' },
                 { image: 'assets/angularB.png', text: 'material' }
             ],
             tools: [
@@ -226,11 +243,11 @@ export const portfolioData: PortfolioData = {
         },
         contact: {
             experience: '8+',
-            companyIconList: [
-                'assets/zen.png',
-                'assets/fis.png',
-                'assets/zycus.png',
-                'assets/inf.png'
+            companyList: [
+                'FIS (Fidelity)',
+                'Zenmonics',
+                'Zycus',
+                'Infosys'
             ],
             phone: '(+91) 9650218723',
             email: 'ayushthakur2009@gmail.com',
@@ -240,6 +257,229 @@ export const portfolioData: PortfolioData = {
                 { label: 'Rock Band Page', link: 'https://www.instagram.com/bedrock.bottom.in/?hl=en' },
                 { label: 'Medium (Tech Blogs)', link: 'https://medium.com/@just-another-developer' }
             ]
-        }
+        },
+        hobbies: {
+            hobbiesArray: [
+                {
+                    imageSrc: 'assets/GuitarDP.jpg',
+                    title: 'Music (Lead Guitarist)',
+                    hobbyLinks: [
+                        {
+                            title: 'Rock Band Page',
+                            link: 'https://www.instagram.com/bedrock.bottom.in/?hl=en'
+                        }
+                    ]
+                },
+                {
+                    imageSrc: 'assets/ooo.png',
+                    title: 'My Youtube Channel',
+                    hobbyLinks: [
+                        {
+                            title: 'Angular Tutorials',
+                            link: 'https://www.youtube.com/playlist?list=PLZdPgkRI3ruiOnkAoA7UGi_ueg4PuB8qB'
+                        },
+                        {
+                            title: 'Travel',
+                            link: 'https://www.youtube.com/playlist?list=PLZdPgkRI3ruidXU2BVr9WU0yoUSphK-w9'
+                        },
+                        {
+                            title: 'Tech Tutorials',
+                            link: 'https://www.youtube.com/playlist?list=PLZdPgkRI3rugThm4kEEZJpwFPVm9o0AA-'
+                        }
+                    ]
+                },
+                {
+                    imageSrc: 'assets/bike.jpg',
+                    title: 'Biker, Coder, Musician',
+                    hobbyLinks: [
+                        {
+                            title: 'Medium Tech Blogs',
+                            link: 'https://medium.com/@just-another-developer'
+                        },
+                        {
+                            title: 'My Instagram Page',
+                            link: 'https://www.instagram.com/_ayush_protean_/'
+                        },
+                        {
+                            title: 'Zaroha Instagram Page',
+                            link: 'https://www.instagram.com/zaroha_adventures/'
+                        }
+                    ]
+                },
+                {
+                    imageSrc: 'assets/jenny.jpg',
+                    title: 'Photography',
+                    hobbyLinks: [
+                        {
+                            title: 'Shutterstock Profile',
+                            link: 'https://www.shutterstock.com/g/TravelingHulk'
+                        },
+                        {
+                            title: 'My Instagram Page',
+                            link: 'https://www.instagram.com/_ayush_protean_/'
+                        }
+                    ]
+                }
+            ]
+        },
+        about: [
+            'Angular version 19',
+            'Github : https://github.com/Hulk914/portfolioApplication',
+            'Responsive Web app - Tablet and mobile compatible',
+            'Coding done using DRY principle with common components and services',
+            'SCSS variables used to maintain consistent color scheme',
+            'Continuous Deployment on every git push',
+            'Standalone components used',
+            'configurable & reusable components created',
+            'deployed on netlify',
+            'Bootstrap used for css',
+            'Future Enhancements : Theme, SSR, Bundle compression, dockerization',
+        ]
+    },
+    shreya: {
+        home: {
+            name: 'Shreya Kumari',
+            experience: '5+',
+            resumePath: '/assets/Shreya_Kumari_Angular_5yrs.pdf',
+            designation: 'Manager',
+            languages: [
+                { image: 'assets/js.png', text: 'javascript' },
+                { image: 'assets/html5.png', text: 'html5' },
+                { image: 'assets/css3.png', text: 'css3' },
+                { image: 'assets/ts.svg', text: 'typescript' },
+                { image: 'assets/java.png', text: 'java' },
+                { image: 'assets/node.png', text: 'node.js' }
+            ],
+            frameworks: [
+                { image: 'assets/angular.png', text: 'angular' },
+                { image: 'assets/bootstrap.png', text: 'bootstrap' },
+                { image: 'assets/react.png', text: 'react' },
+                { image: 'assets/express.png', text: 'expressJS' },
+                { image: 'assets/ngrx.png', text: 'NgRx' },
+                { image: 'assets/angularB.png', text: 'material' }
+            ],
+            tools: [
+                { image: 'assets/vscode.png', text: 'vs code' },
+                { image: 'assets/npm.png', text: 'npm' },
+                { image: 'assets/git.png', text: 'git' },
+                { image: 'assets/postman.png', text: 'postman' },
+                // { image: 'assets/chromeD.png', text: 'dev tools' },
+                { image: 'assets/jira.png', text: 'jira' },
+                { image: 'assets/eclipse.png', text: 'eclipse' }
+            ]
+        },
+        experience: {
+            companyTech: {
+                ibm: {
+                    companyName: 'IBM (APPLICATION DEVELOPER)',
+                    iconArray: [
+                        { image: 'assets/angular.png', text: 'angular' },
+                        { image: 'assets/js.png', text: 'javascript' },
+                        { image: 'assets/html5.png', text: 'html5' },
+                        { image: 'assets/css3.png', text: 'css3' },
+                        { image: 'assets/angularB.png', text: 'material' },
+                        { image: 'assets/vscode.png', text: 'vs code' },
+                        { image: 'assets/npm.png', text: 'npm' },
+                        { image: 'assets/git.png', text: 'git' },
+                        { image: 'assets/chromeD.png', text: 'dev tools' },
+                        { image: 'assets/bitbucket.png', text: 'bitbucket' },
+                        { image: 'assets/jira.png', text: 'jira' },
+                        { image: 'assets/vstudio.png', text: 'visual studio' },
+                        { image: 'assets/ts.svg', text: 'typescript' },
+                        { image: 'assets/postman.png', text: 'postman' },
+                        { image: 'assets/java.png', text: 'java' }
+                    ],
+                    aboutProd: [
+                        `Worked on IBM's R2R (Record to Report) project, focusing on finance and accounting management processes.`,
+                        'Worked on new features as well as maintenance & enhancement tasks',
+                        'Refactored code for quality improvements and addressed accessibility issues using IBM Equal Access Accessibility Checker.'
+                    ]
+                },
+                morgan: {
+                    companyName: 'Morgan Stanley (MANAGER)',
+                    iconArray: [
+                        { image: 'assets/angular.png', text: 'angular' },
+                        { image: 'assets/ngrx.png', text: 'NgRx' },
+                        { image: 'assets/js.png', text: 'javascript' },
+                        { image: 'assets/html5.png', text: 'html5' },
+                        { image: 'assets/css3.png', text: 'css3' },
+                        { image: 'assets/angularB.png', text: 'material' },
+                        { image: 'assets/vscode.png', text: 'vs code' },
+                        { image: 'assets/npm.png', text: 'npm' },
+                        { image: 'assets/git.png', text: 'git' },
+                        { image: 'assets/chromeD.png', text: 'dev tools' },
+                        { image: 'assets/bitbucket.png', text: 'bitbucket' },
+                        { image: 'assets/jira.png', text: 'jira' },
+                        { image: 'assets/vstudio.png', text: 'visual studio' },
+                        { image: 'assets/ts.svg', text: 'typescript' },
+                        { image: 'assets/postman.png', text: 'postman' },
+                        { image: 'assets/java.png', text: 'java' }
+                    ],
+                    aboutProd: [
+                        'Worked as an individual contributor in various Banking Domain applications',
+                        'Lead the Angular version update initiatives by transitioning applications from versions <10 to 16.',
+                        'Managed application requirements, implemented new features, and coordinated with the Release Management Team for smooth production releases.',
+                        'Mentored interns and new hires',
+                        'Conducted interviews and received awards like the Global Excellence Award and Employee Network Award.'
+                    ]
+                }
+            }
+        },
+        contact: {
+            experience: '5+',
+            companyList: [
+                'Morgan Stanley',
+                'IBM'
+            ],
+            phone: '(+91) 7092401980',
+            email: 'shreyapuja777@gmail.com',
+            checkout: [
+                { label: 'LinkedIn', link: 'https://www.linkedin.com/in/shreya-kumari-628287124/' },
+                { label: 'Instagram', link: 'https://www.instagram.com/shreyapuja777/' },
+            ]
+        },
+        hobbies: {
+            hobbiesArray: [
+                {
+                    imageSrc: 'assets/abstract.png',
+                    title: 'Interests',
+                    hobbyLinks: [
+                        {
+                            title: 'Travelling',
+                            link: 'https://www.instagram.com/shreyapuja777/'
+                        },
+                        {
+                            title: 'Dancing',
+                            link: 'https://www.instagram.com/shreyapuja777/'
+                        },
+                        {
+                            title: 'Modelling',
+                            link: 'https://www.instagram.com/shreyapuja777/'
+                        },
+                        {
+                            title: 'Cooking',
+                            link: 'https://www.instagram.com/shreyapuja777/'
+                        },
+                        {
+                            title: 'Music',
+                            link: 'https://www.instagram.com/shreyapuja777/'
+                        },
+                    ]
+                },
+            ],
+        },
+        about: [
+            'Angular version 19',
+            'Github : https://github.com/Hulk914/portfolioApplication',
+            'Responsive Web app - Tablet and mobile compatible',
+            'Coding done using DRY principle with common components and services',
+            'SCSS variables used to maintain consistent color scheme',
+            'Continuous Deployment on every git push',
+            'Standalone components used',
+            'configurable & reusable components created',
+            'deployed on netlify',
+            'Bootstrap used for css',
+            'Future Enhancements : Theme, SSR, Bundle compression, dockerization',
+        ]
     }
 };
